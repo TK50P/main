@@ -1,10 +1,18 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('fonts/Ubuntu-L.woff2') format('woff2'),
+         url('fonts/Ubuntu-L.woff') format('woff'),
+         url('fonts/Ubuntu-L.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #3d4f64; /* Background color similar to the one in the screenshot */
+    background-color: #3d4f64;
     color: white;
-    text-align: center;
 }
 
 header {
@@ -12,12 +20,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #3d4f64; /* Match the body background */
+    background-color: #2c3e50;
 }
 
 h1 {
     margin: 0;
     font-size: 1.5em;
+    font-weight: 300; /* Light font weight */
 }
 
 nav ul {
@@ -42,5 +51,24 @@ nav a:hover {
 }
 
 main {
-    padding: 50px;
+    max-width: 600px; /* Adjust the width of the content */
+    margin: 20px auto; /* Center the content horizontally */
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+    background-color: #2c3e50; /* Add a background color if needed */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.25em;
+    color: #ecf0f1;
+}
+
+p {
+    font-size: 1em;
+    color: #bdc3c7;
 }
