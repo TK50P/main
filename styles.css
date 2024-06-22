@@ -116,6 +116,75 @@ p {
     color: #bdc3c7;
 }
 
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+section#about-me, section#contact-me, section#modiso, section#iso-list {
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.pc-image {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.pc-specs ul, #iso-list ul {
+    list-style: none;
+    padding: 0;
+    color: #bdc3c7;
+}
+
+h2, h3 {
+    font-size: 1.5em;
+    color: #ecf0f1;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #ffffff; /* Link color */
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+ul li h3 {
+    color: yellow;
+    font-weight: bold;
+}
+
 .contact-message {
     font-size: 1.2em;
     color: white;
